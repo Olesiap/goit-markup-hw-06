@@ -1,0 +1,29 @@
+.feature-list-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.feature-wrapper {
+  display: flex;
+  gap: 24px;
+  margin: 0 15px;
+  max-width: 1158px;
+}
+
+.features-list {
+  width: calc((100% - 72px) / 4);
+}
+
+.feature-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 112px;
+  margin-bottom: 8px;
+  background: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}

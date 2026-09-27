@@ -1,0 +1,136 @@
+.footer {
+  background-color: #2e2f42;
+  color: #f4f4fd;
+  display: block;
+  padding: 100px 0;
+}
+
+.footer-wrapper {
+  width: 264px;
+  max-width: 264px;
+  margin: 0 120px 0 0;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #f4f4fd;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.footer-social {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.footer-social-icon {
+  display: inline-flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.footer-social-icon .social-icon-wrapper:hover,
+.footer-social-icon .social-icon-wrapper:focus {
+  background-color: #31d0aa;
+}
+
+.subscribe-block {
+  display: flex;
+  flex-direction: column;
+  width: 453px;
+  height: 80px;
+  margin: 0 0 32px auto;
+}
+
+.subscribe {
+  display: inline-flex;
+  gap: 24px;
+  width: 453px;
+  height: 40px;
+}
+
+.subscribe label {
+  display: none;
+}
+
+.submit-button {
+  display: inline-flex;
+  gap: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  height: 40px;
+  max-width: 165px;
+  background-color: #4d5ae5;
+  padding: 8px 24px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: 250ms ease-in-out;
+  transition-property: background-color;
+}
+
+.subscribe-text {
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 16px;
+}
+
+.send-icon {
+  fill: #fff;
+}
+
+.subscribe input {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 8px 16px;
+  width: 264px;
+  height: 40px;
+  background-color: transparent;
+  outline: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #fff;
+  transition: 250ms ease-in-out;
+  transition-property: border-color;
+}
+
+.subscribe input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.subscribe input:hover,
+.subscribe input:focus,
+.subscribe input:active {
+  border-color: #31d0aa;
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: #31d0aa;
+}
