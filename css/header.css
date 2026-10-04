@@ -1,3 +1,36 @@
+.header {
+  /* border-bottom: 1px solid #e7e9fc; */
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+  }
+  .header .container {
+    justify-content: none;
+  }
+  .logo {
+    padding: 24px 0;
+    margin-right: 120px;
+  }
+  .mobile-menu-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .header {
+    border-bottom: 1px solid #e7e9fc;
+    background: #fff;
+  }
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -8,13 +41,30 @@
   color: #2e2f42;
   display: inline-flex;
   align-items: center;
-  margin-right: 76px;
+  padding: 16px 0;
 }
 
 .logo-accent {
   color: #4d5ae5;
 }
 
+.navigation {
+  display: flex;
+}
+
+.address {
+  font-style: normal;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 767.98px) {
+  .navigation {
+    display: none;
+  }
+  .address {
+    display: none;
+  }
+}
 .navigation-link {
   position: relative;
   display: inline-block;
@@ -50,42 +100,69 @@
   color: #404bbf;
 }
 
-.address {
-  font-style: normal;
-  margin-left: auto;
-}
-
-.address-list {
-  display: inline-flex;
-  gap: 40px;
+.navigation-list {
+  display: flex;
   align-items: center;
+  gap: 40px;
 }
 
 .address-link {
   color: inherit;
-  padding: 24px 0;
+  white-space: nowrap;
   transition: color 250ms ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    height: 40px;
+  }
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+  .address-link {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .address {
+    height: 72px;
+  }
+  .address-list {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    display: inline-flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    padding: 24px 0;
+  }
 }
 
 .address-link:hover,
 .address-link:focus {
   color: #404bbf;
 }
-.header {
-  border-bottom: 1px solid #e7e9fc;
-}
 
-.header .container {
+.mobile-menu-button {
+  background-color: transparent;
+  border: none;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 5px 4px;
 }
 
-.navigation {
-  display: flex;
-}
-
-.navigation-list {
-  display: flex;
-  align-items: center;
-  gap: 40px;
+@media screen and (min-width: 768px) {
+  .mobile-menu-button {
+    display: none;
+  }
 }

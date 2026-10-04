@@ -1,7 +1,7 @@
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -18,13 +18,44 @@
 
 .portfolio-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 48px 24px;
+  flex-direction: column;
+  gap: 48px;
+  /* flex-wrap: wrap;
+  gap: 48px 24px; */
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-wrapper {
+    gap: 48px 24px;
+  }
 }
 
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
+  max-width: 288px;
   transition: box-shadow 250ms ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
+    max-width: 356px;
+  }
+}
+
+@media screen and (min-width: 1158) {
+  .portfolio-item {
+    width: calc((100% - 2 * 24px) / 3);
+    max-width: 360px;
+  }
 }
 
 .portfolio-item:hover,

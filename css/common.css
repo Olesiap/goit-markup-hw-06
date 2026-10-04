@@ -7,11 +7,23 @@ p {
 }
 
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  max-width: 320px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
 ul,
 ol {
   margin: 0;
@@ -36,6 +48,11 @@ a {
   text-decoration: none;
 }
 
+/* helper class */
+.hide {
+  display: none !important;
+}
+
 .sr-only {
   position: absolute;
   white-space: nowrap;
@@ -51,7 +68,8 @@ a {
 }
 
 section {
-  padding: 120px 0;
+  padding: 96px 0;
+  /* desktop padding: 120px 0; */
 }
 
 .social-icon {
