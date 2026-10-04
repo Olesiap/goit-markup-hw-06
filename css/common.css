@@ -86,3 +86,37 @@ section {
   background: #4d5ae5;
   transition: background-color 250ms ease-in-out;
 }
+
+/* close button shared by the modal window and the mobile menu */
+.modal-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 250ms ease-in-out;
+  transition-property: background-color;
+  margin-bottom: 40px;
+}
+
+.modal-button-icon {
+  fill: #2e2f42;
+  transition: 250ms ease-in-out;
+  transition-property: fill;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  background-color: #404bbf;
+}
+
+.modal-button:hover > .modal-button-icon,
+.modal-button:focus > .modal-button-icon {
+  fill: #fff;
+}

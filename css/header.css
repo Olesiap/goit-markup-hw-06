@@ -23,6 +23,9 @@
     border-bottom: 1px solid #e7e9fc;
     background: #fff;
   }
+  .logo {
+    margin-right: 76px;
+  }
 }
 
 .header .container {
