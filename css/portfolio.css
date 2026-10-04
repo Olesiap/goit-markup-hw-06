@@ -39,6 +39,12 @@
   }
 }
 
+@media screen and (min-width: 1158px) {
+  .portfolio-wrapper {
+    row-gap: 48px;
+  }
+}
+
 .portfolio-item {
   max-width: 288px;
   transition: box-shadow 250ms ease-in-out;
